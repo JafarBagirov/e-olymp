@@ -1,3 +1,5 @@
+# I method
+
 def solve():
     n = int(input())
     ans = 1
@@ -13,3 +15,15 @@ def solve():
         ans *= k
     print(ans)
 solve()
+
+# II method
+
+def count(n):
+    if n != 1:
+        s = 8 * (9 ** (n - 1)) 
+        return s
+    else:
+        return 8
+
+n = int(input())
+print(count(n))
