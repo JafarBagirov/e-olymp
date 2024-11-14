@@ -1,3 +1,4 @@
+# I method
 m,n,k = map(int, input().split())
 print(m // n, end='')
 if k > 0:
@@ -16,3 +17,13 @@ while curk < k:
         print(curm // n, end='')
         curm = (curm % n) * 10
         curk += 1
+
+# II method
+
+m,n,k=map(int,input().split())
+print(str(m//n)+".",end="")
+m=m%n
+for i in range(1,k+1):
+    m=m*10
+    print(m//n,end="")
+    m=m%n
